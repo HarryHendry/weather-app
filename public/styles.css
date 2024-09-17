@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #c5fcc5;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #76f976;
+}
+
+.weather-result {
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+    margin-top: 20px;
+}
+
+.morning { background-color: #ffffcc; }
+.afternoon { background-color: #9fe9fc; }
+.evening { background-color: #2565ae; }
+.night { background-color: #001f3f; color: rgb(0, 0, 0); }
+.card {
+    max-width: 400px;
+    margin: 20px auto;
+    
+    border-radius: 10px;
+    
+    background: #fff;
+    text-align: center;
+}
+.card img {
+    width: 170px;
+    height: 170px;
+}
+.card-header {
+    font-size: 1.5em;
+   
+ 
+}
+
+.card-header h2 {
+    font-weight: 100;
+}
+.card-body {
+    margin: 40px 0 50px 0;
+}
+
+.card-body p:nth-child(2) {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.card-footer {
+    font-size: 0.9em;
+    color: #555;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-wind img {
+    height: 35px;
+    width: 35px;
+}
+.error {
+    color: red;
+    margin-top: 20px;
+}

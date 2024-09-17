@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/styles.css"> <
+    <style>
+       
+    </style>
+</head>
+<body class="<%= bgClass %>">
+    <div class="container">
+        <h1>Weather App</h1>
+        <form action="/weather" method="GET">
+            <input type="text" name="city" placeholder="Enter city name">
+            <button type="submit">Get Weather</button>
+        </form>
+
+        <% if (error) { %>
+            <div class="error">
+                <p><%= error %></p>
+            </div>
+        <% } %>
+
+        <% if (weather) { %>
+            <div class="card">
+                <div class="card-header">
+                    <h2><%= weather.city %></h2>
+                    <p><%= weather.time %></p>
+                </div>
+                <div class="card-body">
+                    <img src="<%= weather.iconUrl %>" alt="Weather Icon">
+                    <p><%= weather.temperature %>°C</p>
+                    <p><%= weather.description %></p>
+                </div>
+                <div class="card-footer">
+                    <div class="footer-wind">
+                        <img src="/images/sun-icon.png" />
+                        <p>Time</p>
+                    <p><%= weather.time %> </p>
+                    </div>
+                    <div class="footer-wind">
+                        <img src="/images/wind.png" />
+                        <p>Wind</p>
+                    <p><%= weather.windSpeed %> m/s </p>
+                    </div>
+                    <div class="footer-wind">
+                        <img src="/images/thermometer.png" />
+                        <p>Temp</p>
+                    <p><%= weather.temperature %>°C</p>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
+
